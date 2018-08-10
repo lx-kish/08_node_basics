@@ -9,6 +9,8 @@ let date = new Date();
 
 let message = `User "${user.username}" started this APP at ${date}`;
 
+console.log('hey');
+
 fs.appendFile("hello.txt", message,(err)=>{
     if(err){
         console.log('not able to append ' + err)
